@@ -1,0 +1,9 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: picard
+nodes:
+  - role: control-plane
+  - role: worker
+networking:
+  podSubnet: "172.28.0.0/16"
+  serviceSubnet: "172.29.1.0/24"
